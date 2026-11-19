@@ -17,6 +17,6 @@ public class Circle extends GeometricObject{
 
     @Override
     public double findArea() {
-        ;
+        return 3.14 * radius * radius;
     }
 }
