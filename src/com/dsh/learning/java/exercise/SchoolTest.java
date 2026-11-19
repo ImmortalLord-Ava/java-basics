@@ -8,7 +8,7 @@ public class SchoolTest {
         Person[] arr = new Person[stu1, stu2, tea];
         //这能直接存入数组吗，类型都不对吧。这咋存。
         for (int i = 0; i < 3; i++) {
-            arr[i]. public void say ();
+            arr[i].say ();
         }
         if (stu1 instanceof Person) {
             System.out.println("学号是；" + stu1.getNo());
