@@ -1,0 +1,31 @@
+package com.atguigu.practice;
+
+public class MyRectangle extends GeometricObject{
+    private double width;
+    private double height;
+    public MyRectangle(double width,double height,String color,double weight){
+        super(String color,double weight);
+        this.width=width;
+        this.height=height;
+    }
+    public void setWidth(double width){
+        this.width=width;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    @Override
+    public double findArea() {
+        return width * height;
+    }
+}
