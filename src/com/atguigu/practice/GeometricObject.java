@@ -24,6 +24,7 @@ public class GeometricObject {
     }
 
     public double findArea(){
-
+        return 0.0;
     }
+
 }
