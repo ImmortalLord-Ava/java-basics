@@ -3,7 +3,7 @@ package com.atguigu.practice;
 public class Circle extends GeometricObject{
     private double radius;
     public Circle(String color,double weight,double radius){
-        super(String color,double weight);
+        super(color, weight);
         this.radius=radius;
     }
     public Circle(double radius){
