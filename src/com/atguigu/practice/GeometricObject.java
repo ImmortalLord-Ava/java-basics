@@ -4,6 +4,9 @@ public class GeometricObject {
     private String color;
     private double weight;
 
+    public GeometricObject(){
+    }
+
     public GeometricObject(String color,double weight){
         this.color=color;
         this.weight=weight;
