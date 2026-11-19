@@ -4,7 +4,7 @@ public class Student extends Person{
     private String no;
     private String major;
     public Student(String no, String major){
-        super("张白露",19);
+        super( "张白露",19);
         this.major=major;
         this.no=no;
     }
@@ -17,6 +17,8 @@ public class Student extends Person{
     public String getNo() {
         return no;
     }
-    
+    public void say(){
+        System.out.println("姓名；" + getName(),"年龄；" + getAge(),"学号；" + no,"专业；" + major);
+    }
 }
 
