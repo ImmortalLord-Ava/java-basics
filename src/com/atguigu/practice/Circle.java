@@ -6,6 +6,9 @@ public class Circle extends GeometricObject{
         super(String color,double weight);
         this.radius=radius;
     }
+    public Circle(double radius){
+        this.radius=radius;
+    }
 
     public void setRadius(double radius) {
         this.radius = radius;
