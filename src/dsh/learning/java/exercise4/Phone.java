@@ -12,5 +12,7 @@ public class Phone extends Product{
     public double getFinalPrice(){
         return getPrice()=getPrice()-200;
     }
-    p
+    public String describe(){
+        System.out.println(getName() getPrice() brand);
+    }
 }
