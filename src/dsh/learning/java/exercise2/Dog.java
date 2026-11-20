@@ -8,6 +8,7 @@ public class Dog extends Animal{
         super(name,age);
         this.breed = breed;
     }
+    @Override
     public void speak(){
         System.out.println("姓名；" + getName() + "年龄；" + getAge() + "种类；" + breed);
     }
