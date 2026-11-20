@@ -2,31 +2,29 @@ package dsh.learning.java.exercise3;
 
 public class Car extends Vehicle {
 
-    // 属于第 3 步：在 super(...) 之后才生效
+    // ★★【字段初始化】第 3 步执行（在 super(...) 之后）
     private String color = "透明";
 
     public Car(String brand, int wheels, String color) {
 
-        // ★必须是第一句：写在这行前面的任何代码都会报错
-        //   call to super must be first statement in constructor
+        // 第 2 步：进父类（必须第一句）
         super(brand, wheels);
 
-        // ★这里写 this.color 才是字段；直接写 color 拿到的是参数
-        System.out.println("  [C3] 子类构造器体开始：字段 color = " + this.color);
+        // ★★ 第 4 步开头，第 3 步【字段初始化】刚跑完，所以打出 透明
+        System.out.println("  [第3步·字段初始化] color = " + this.color + "  （= 透明 生效了）");
 
+        // ★★【构造器体赋值】第 4 步执行，把 透明 覆盖成参数值
         this.color = color;
 
-        System.out.println("  [C4] 子类构造器体结束：color=" + this.color);
+        System.out.println("  [第4步·构造器体赋值] color = " + this.color + "  （被参数覆盖）");
     }
 
     public Car(String brand) {
-        // ★this(...) 也只能是第一句：先转到上面那个构造器，super 在那边执行
         this(brand, 4, "黑色");
-        System.out.println("  [C5] 单参构造器体：串联完成");
+        System.out.println("  [第5步] 单参构造器体：串联完成");
     }
 
     public void show() {
-        // 已经不在构造器里，字段随便用
         System.out.println("  品牌=" + getBrand() + "  轮子=" + getWheels() + "  颜色=" + color);
     }
 }
