@@ -13,11 +13,10 @@ public class MarketTest {
                 System.out.println("作者：" + ((Book) cart[i]).author +"页数；" + ((Book) cart[i]).pages);
             } else if (cart[i] instanceof Phone) {
                 System.out.println("品牌；" + ((Book) cart[i]).brand + "存储；" + ((Book) cart[i]).storageGB);
-            }else(cart[i] instanceof Food){
+            }else//(cart[i] instanceof Food)else 后面不能带条件{
                 System.out.println("保质期；" + expireDate);
             }
             }
         }
 
-    }
 }
