@@ -4,7 +4,9 @@ public class Animal {
     private String name;
     private int age;
     Animal(){
-
+    }
+    Animal(int age){
+        this.age = age;
     }
     Animal(String name, int age){
         this.name = name;
