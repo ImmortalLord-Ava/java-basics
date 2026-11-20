@@ -9,7 +9,7 @@ public class Cat extends Animal{
     public Cat(){
     }
     public Cat(String name){
-        this(name,super(age),"白色");
+        this(name,0,"白色");
     }
     @Override
     public void speak(){
