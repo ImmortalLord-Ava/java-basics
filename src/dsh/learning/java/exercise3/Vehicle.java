@@ -5,7 +5,7 @@ public class Vehicle {
     private int wheels = 3;
 
     public Vehicle(String brand, int wheels){
-        System.out.println("Vehicle构造器 brand=... wheels=..");
+        System.out.println("Vehicle构造器 brand= " + brand + "");
         this.brand = brand;
         this.wheels = wheels;
     }
