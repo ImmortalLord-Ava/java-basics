@@ -3,14 +3,11 @@ package dsh.learning.java.exercise4;
 public class Product {
     private String name;
     private double price;
-    static int totalCount;
-    static double totalSales;
 
-    public Product(String name, double price){
-        System.out.println("\"Product 构造器执行\"");
+    public Product(String name, double price) {
+        System.out.println("Product 构造器执行");
         this.name = name;
         this.price = price;
-        totalCount++;
     }
 
     public String getName() {
@@ -20,13 +17,19 @@ public class Product {
     public double getPrice() {
         return price;
     }
-    public double getFinalPrice(){
+
+    // 父类的最终价：原价。子类可以重写它
+    public double getFinalPrice() {
         return price;
     }
-    public String describe(){
-        String return name + " " + price;//System.out.println(name price);
-    }                                    //返回String 就必须 return
-    public final String getLabel(){
-        return "【" + name + "】";//System.out.println("\"【\" + name + \"】\"");
+
+    // 返回字符串，不是打印
+    public String describe() {
+        return name + " " + price;
+    }
+
+    // final：子类不能重写这个方法
+    public final String getLabel() {
+        return "【" + name + "】";
     }
 }
