@@ -6,5 +6,7 @@ public class Dog extends Animal{
         super(name,age);
         this.breed = breed;
     }
-    
+    public void speak(){
+        System.out.println("姓名；" + getName() + "年龄；" + getAge() + "种类；" + breed);
+    }
 }
