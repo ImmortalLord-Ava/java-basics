@@ -11,6 +11,6 @@ public class Car extends Vehicle{
         this(brand,4,"黑色");
     }
     public void show(){
-        System.out.println("");
+        System.out.println("品牌=" + getBrand() + "轮子=" + getWheels() + "颜色=" + color);
     }
 }
