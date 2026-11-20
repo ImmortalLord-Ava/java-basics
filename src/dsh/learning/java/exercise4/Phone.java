@@ -10,7 +10,7 @@ public class Phone extends Product{
         this.storageGB = storageGB;
     }
     public double getFinalPrice(){
-        return getPrice()=getPrice()-200;
+        return getPrice()-200;
     }
     public String describe(){
         System.out.println(getName() getPrice() brand);
