@@ -7,6 +7,21 @@ public class Product {
     static double totalSales;
 
     public Product(String name, double price){
-        System.out.println("Product 构造器执行");
+        System.out.println("\"Product 构造器执行\"");
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+    public double getFinalPrice(){
+        return price;
+    }
+    public String describe(){
+        System.out.println("\"name price\"");
+    }
+    public
 }
