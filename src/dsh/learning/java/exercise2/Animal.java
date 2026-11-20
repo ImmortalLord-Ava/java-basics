@@ -3,6 +3,9 @@ package dsh.learning.java.exercise2;
 public class Animal {
     private String name;
     private int age;
+    Animal(){
+
+    }
     Animal(String name, int age){
         this.name = name;
         this.age = age;
