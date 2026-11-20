@@ -15,6 +15,6 @@ public class Book extends Product{
        }
     }
     public String describe(){
-        System.out.println(getName() getPrice() author);
+        System.out.println(getName() + getPrice() +  author);
     }
 }
