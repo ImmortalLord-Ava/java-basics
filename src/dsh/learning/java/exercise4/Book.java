@@ -11,7 +11,7 @@ public class Book extends Product{
     }
     public double getFinalPrice(){
        if(getPrice()>50){
-           getPrice()=getPrice()*0.8;
+          return getPrice()*0.8;
        }
     }
     public String describe(){
