@@ -21,12 +21,12 @@ public class Product {
         return price;
     }
     public double getFinalPrice(){
-        return totalCount-totalSales;
+        return price;
     }
     public String describe(){
-        System.out.println(name + " " + price);
+        String return name + " " + price;//System.out.println(name price);
     }
     public final String getLabel(){
-        return "【" + name + "】";/
+        return "【" + name + "】";//System.out.println("\"【\" + name + \"】\"");
     }
 }
