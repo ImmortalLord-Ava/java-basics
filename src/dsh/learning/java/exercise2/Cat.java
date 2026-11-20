@@ -9,7 +9,7 @@ public class Cat extends Animal{
     public Cat(){
     }
     public Cat(String name){
-        this(setName(),setAge(),"白色");
+        this(name,super.age,"白色");
     }
     public void speak(){
         System.out.println("姓名；" + getName() + "年龄；" + getAge() + "颜色；" + color);
