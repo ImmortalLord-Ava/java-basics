@@ -25,7 +25,7 @@ public class Product {
     }
     public String describe(){
         String return name + " " + price;//System.out.println(name price);
-    }
+    }                                    //返回String 就必须 return
     public final String getLabel(){
         return "【" + name + "】";//System.out.println("\"【\" + name + \"】\"");
     }
