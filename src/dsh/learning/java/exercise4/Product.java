@@ -8,6 +8,9 @@ public class Product {
 
     public Product(String name, double price){
         System.out.println("\"Product 构造器执行\"");
+        this.name = name;
+        this.price = price;
+        totalCount++;
     }
 
     public String getName() {
@@ -23,5 +26,7 @@ public class Product {
     public String describe(){
         System.out.println("\"name price\"");
     }
-    public
+    public final String getLabel(){
+        System.out.println("\"【\" + name + \"】\"");
+    }
 }
