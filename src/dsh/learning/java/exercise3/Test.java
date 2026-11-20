@@ -1,9 +1,11 @@
 package dsh.learning.java.exercise3;
 
 /*
- * 看两个证据：
- *   [V3] 打出 wheels = 3     → 父类字段初始化已完成
- *   [C3] 打出 color = 透明   → 子类字段初始化已完成
+ * 看四行输出，就能把两种初始化分开：
+ *   [第3步·字段初始化] wheels = 3     ← 字段声明处的 = 3
+ *   [第4步·构造器体赋值] wheels = 4   ← 构造器里的 this.wheels = wheels;
+ *   [第3步·字段初始化] color = 透明   ← 字段声明处的 = "透明"
+ *   [第4步·构造器体赋值] color = 黑色 ← 构造器里的 this.color = color;
  */
 public class Test {
     public static void main(String[] args) {
