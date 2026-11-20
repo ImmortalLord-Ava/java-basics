@@ -7,5 +7,10 @@ public class Car extends Vehicle{
         super(brand, wheels);
         this.color = color;
     }
-    
+    public Car(String brand){
+        this(brand,4,"黑色");
+    }
+    public void show(){
+        System.out.println("");
+    }
 }
