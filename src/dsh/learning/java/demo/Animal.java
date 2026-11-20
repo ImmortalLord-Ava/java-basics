@@ -27,7 +27,7 @@ public class Animal {
     private int age;
 
     // 父类只有这一个带参构造器 → 子类必须写 super(name, age)
-    // 如果这里再加一个 public Animal() {}，子类就能不写 super(...) 了
+    // 如果这里再加一个 public Animal() {}，子类就能不写 super(...) 了，为什么？？？？？？
     public Animal(String name, int age) {
 
         // 【易错点 ★2】此刻 legs 已经等于 4 了（第 3 步已完成）
