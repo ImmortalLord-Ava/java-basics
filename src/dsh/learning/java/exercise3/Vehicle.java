@@ -7,7 +7,7 @@ package dsh.learning.java.exercise3;
  *
  *  【对象创建四步】
  *    1. 分配内存，所有字段 = 默认值（0 / null）
- *    2. 执行 super(...)：父类字段初始化 → 父类构造器体
+ *    2. 执行 super(...)：父类字段初始化 → 父类构造器体..字段初始化在 super 之后、构造器体之前
  *    3. 回到本类：本类【字段初始化】   ← private int wheels = 3; 的 = 3 就是这一步
  *    4. 执行本类【构造器体】            ← this.wheels = wheels;  是这一步
  *
