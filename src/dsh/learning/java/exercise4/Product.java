@@ -24,7 +24,7 @@ public class Product {
         return price;
     }
     public String describe(){
-        System.out.println("\"name price\"");
+        System.out.println(name price);
     }
     public final String getLabel(){
         System.out.println("\"【\" + name + \"】\"");
