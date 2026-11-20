@@ -10,8 +10,14 @@ public class MarketTest {
         for (int i = 0; i < cart.length; i++) {
             System.out.println(getLabel() + describe() + getFinalPrice());
             if(cart[i] instanceof Book){
-                System.out.println("");
+                System.out.println("作者：" + ((Book) cart[i]).author +"页数；" + ((Book) cart[i]).pages);
+            } else if (cart[i] instanceof Phone) {
+                System.out.println("品牌；" + ((Book) cart[i]).brand + "存储；" + ((Book) cart[i]).storageGB);
+            }else(cart[i] instanceof Food){
+                System.out.println("保质期；" + expireDate);
+            }
             }
         }
+
     }
 }
