@@ -1,15 +1,20 @@
 package dsh.learning.java.exercise4;
 
+/**
+ * 商品父类。
+ *
+ * 你这一版踩过的坑（留档，方便复习）：
+ *   1. 声明 String 的方法必须 return，只 println 会报 missing return statement
+ *   2. 字符串拼接漏了 + 号：name price 不是"两个值"，是一堆语法错误
+ *   3. getPrice() 是方法调用，不能放在 = 左边（getPrice() = ... 编译不过）
+ *   4. 原价不要被改：打折只影响返回值，不影响 price 字段
+ */
 public class Product {
     private String name;
     private double price;
 
     public Product(String name, double price) {
-        //你原来写：System.out.println("\"Product 构造器执行\"");
-        //    转义引号会把双引号也打出来，显示成 "Product 构造器执行"
-        //改成下面这样：
         System.out.println("Product 构造器执行");
-
         this.name = name;
         this.price = price;
     }
@@ -22,25 +27,24 @@ public class Product {
         return price;
     }
 
-    //你原来写：public double getFinalPrice(){ return totalCount-totalSales; }
-    //    问题：父类的最终价就是原价，跟统计数字没关系
-    //改成：直接返回 price
+    /** 最终价：父类原价不打折，子类按自己的规则重写。 */
     public double getFinalPrice() {
         return price;
     }
 
-    //你原来写：public String describe(){ System.out.println(name price); }
-    //    两个问题：① 少了 +，name 和 price 不能直接挨着写
-    //             ② 声明是 String 就必须 return，只 println 会报 missing return statement
-    //改成：返回拼接好的字符串
+    /** 各自特有的信息，父类只给"名称 原价"。 */
     public String describe() {
-        return name + " " + price;
+        return name + " 原价 " + price;
     }
 
-    //你原来写：public final String getLabel(){ System.out.println("\"【\" + name + \"】\""); }
-    //    问题：把整个拼接塞进了一个字符串里，打印出来就是源码本身；而且没有 return
-    //改成：
+    /** final：所有商品的前缀格式固定，子类不许改。 */
     public final String getLabel() {
         return "【" + name + "】";
+    }
+
+    /** 一行打印用，价格统一保留两位小数（%.2f）。 */
+    @Override
+    public String toString() {
+        return getLabel() + " " + describe() + " 最终价 " + String.format("%.2f", getFinalPrice());
     }
 }
