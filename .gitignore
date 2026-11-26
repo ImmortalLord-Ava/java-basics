@@ -1,25 +1,3 @@
-# 编译产物
 out/
-build/
-target/
-*.class
-*.jar
-
-# IDE
-.idea/
+.idea/workspace.xml
 *.iml
-*.ipr
-*.iws
-.vscode/
-.settings/
-.classpath
-.project
-
-# 编辑器临时文件
-*.swp
-*.swo
-*~
-
-# 系统
-.DS_Store
-Thumbs.db
