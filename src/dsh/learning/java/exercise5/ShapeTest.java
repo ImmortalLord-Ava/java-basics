@@ -16,6 +16,7 @@ public class ShapeTest {
                 arr[i].draw();
             }
             System.out.println(Circle.category());
+            
         }
     }
 }
