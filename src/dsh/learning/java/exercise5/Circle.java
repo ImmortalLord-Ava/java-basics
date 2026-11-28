@@ -2,6 +2,7 @@ package dsh.learning.java.exercise5;
 
 public class Circle extends Shape{
     private double r;
+    private String type = "Circle";
     Circle(String name, double r){
         super(name);
         this.r = r;
@@ -16,5 +17,12 @@ public class Circle extends Shape{
     public void draw() {
         System.out.println("绘制图形");
     }
-    
+
+    @Override
+    public String getType() {
+        return type;
+    }
+    public static String category() {
+        return "圆形";
+    }
 }
