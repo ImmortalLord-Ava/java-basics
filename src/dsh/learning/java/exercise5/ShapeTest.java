@@ -16,7 +16,12 @@ public class ShapeTest {
                 arr[i].draw();
             }
             System.out.println(Circle.category());
-            
+            Object b = new Circle(name,r);
+            if (b instanceof Shape){
+                Circle b = (Shape) b;
+                b.draw();
+            }
+
         }
     }
 }
