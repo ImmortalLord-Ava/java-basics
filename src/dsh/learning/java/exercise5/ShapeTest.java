@@ -6,6 +6,8 @@ public class ShapeTest {
         for (int i = 0; i < 2; i++) {
             if(arr[i] instanceof Circle){
             arr[i] = new Circle("c1",2);
+                System.out.println("arr[0].getType()=" + arr[i].getType() + ",(Circle) arr[0]).getType()=" + (Circle) arr[i]).getType() );
+                arr[i].category();
             }else{
                 arr[i] = new Rect("r1",3,4);
             }
@@ -13,7 +15,7 @@ public class ShapeTest {
                 arr[i].area();
                 arr[i].draw();
             }
-            System.out.println("arr[0].getType()=" + arr[0].getType() + "" );
+            System.out.println(Circle.category());
         }
     }
 }
