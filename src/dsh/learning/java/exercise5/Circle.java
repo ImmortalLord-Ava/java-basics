@@ -3,7 +3,7 @@ package dsh.learning.java.exercise5;
 public class Circle extends Shape{
     private double r;
     private String type = "Circle";
-    Circle(String name, double r){
+    public Circle(String name, double r){
         super(name);
         this.r = r;
     }
@@ -15,7 +15,7 @@ public class Circle extends Shape{
 
     @Override
     public void draw() {
-        System.out.println("绘制图形");
+        System.out.println("绘制圆形");
     }
 
     @Override
