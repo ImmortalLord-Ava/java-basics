@@ -4,7 +4,7 @@ public class Rect extends Shape{
     private double width;
     private double height;
     private String type = "Rect";
-    Rect(String name, double w, double h){
+    public Rect(String name, double w, double h){
         super(name);
        this.width = w;
        this.height = h;
